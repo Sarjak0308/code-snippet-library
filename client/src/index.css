@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.brandLogo {
+  height: 80px;
+  width: 200px;
+}
+
+.heroToast {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.heroImg {
+  height: 350px;
+  width: 600px;
+  /* margin: 5%;
+  margin-left: 10px; */
+}
+
+.heroText {
+  margin: 5%;
+  margin-left: 10%;
+  color: white;
+  width: 500px;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Cards */
+.MyCard {
+  margin-top: 100px;
+  height: 256px;
+  width: 256px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+  background-color: #292b2c;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardBody {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(70, 85, 85, 0.1);
+  backdrop-filter: blur(5px);
+  color: white;
+  transition: 2s;
+}
+
+.MyCard:hover .cardBody {
+  right: 0;
+}
+
+.cardTitle {
+  font-family: "Poppins", sans-serif;
+  margin-top: 14px;
+  margin-left: 25px;
+  font-size: 35px;
+  font-weight: 450;
+}
+
+.cardInfo {
+  margin-left: 20px;
+  font-family: "AR One Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 10px;
+  height: 100px;
+  width: auto;
+}
+
+.cardBtn img {
+  border-radius: 100px;
+  padding: 10px;
+  background: #212529;
+  height: 50px;
+  width: 50px;
+  margin-left: 80%;
+  margin-top: -15%;
+}
+
+/* Cards */
+
+.Languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f6d365;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right bottom,
+    rgba(48, 83, 94, 1),
+    rgba(253, 160, 133, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to left bottom,
+    rgba(50, 90, 150, 1),
+    rgba(120, 40, 100, 1)
+  );
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.insta-icon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 20%;
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+}
+.insta-icon:after,
+.insta-icon:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+.insta-icon:before {
+  border-radius: 20%;
+}
+.insta-icon:after {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.github {
+  font-size: 36px;
+  color: #2b3137;
+}
+
+.linkedin {
+  font-size: 36px;
+  color: #0077b5;
+}
